@@ -4,7 +4,9 @@
   "description": "WR knock-off of Instructor Photo Share site. Node, Connect, Express, Pug.",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node ./bin/www",
+    "start-nodemon": "nodemon ./bin/www"
   },
   "author": "wreilly2001@gmail.com",
   "license": "ISC"
