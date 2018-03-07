@@ -1,0 +1,11 @@
+{
+  "name": "wr-photo",
+  "version": "1.0.0",
+  "description": "WR knock-off of Instructor Photo Share site. Node, Connect, Express, Pug.",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "wreilly2001@gmail.com",
+  "license": "ISC"
+}
