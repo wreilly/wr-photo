@@ -1,0 +1,16 @@
+extends layout
+
+block content
+  h4 WR__ My Photos
+  p Blue is well blue
+  .alert.alert-danger Are we here. #{flash_message} Well, are we?
+  .row
+    each photo in photos
+      .col-sm-4
+        p Title: #{photo.title}
+        p Description: #{photo.description}
+        p= photo.description
+        img(src=photo.imageurl, width="200")
+  //-include newphoto-simple
+  include newphoto
+    //- +my-newphotoform-mixin(flash_message) O GOOD. NO NEED FOR MIXINS AND PARAMETERS. SHEESH.

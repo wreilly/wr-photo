@@ -1,0 +1,19 @@
+h3 Upload a Photo - Simple!
+  if flash_message.length > 0
+    .alert.alert-danger #{flash_message} is there an error dont know
+  .row
+    .col-md-6.col-md-offset-3
+      form(method="POST" action="/photos" enctype="multipart/form-data")
+        div.form-group
+          label(for="name") Photo Title:
+          input#name.form-control(type="text", placeholder="title pls" name="title_name")
+        div.form-group
+          label(for="email") Description:
+          input#email.form-control(type="text", placeholder="desc pls" name="description_name")
+        //- div.form-group
+          //- label(for="imageurl") Image URL:
+          //- input#imageurl.form-control(type="text", placeholder="imageurl pls" name="imageurl_name")
+        div.form-group
+          label(for="image") Image File:
+          input#image.form-control(type="file", placeholder="image pls" name="image_name" multiple)
+        button.btn.btn-primary(type="submit") Post Yer Photo
