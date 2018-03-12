@@ -1,7 +1,9 @@
 #!/usr/bin/env node
 
 var app = require('../app')
-var debug = require('debug')('wr-photo:server')
+
+/* var debug = require('debug')('wr-photo:server') */
+
 var http = require('http')
 
 console.log('process.env.PORT: ', process.env.PORT)
@@ -56,5 +58,6 @@ function onListening() {
 	 var bind = typeof addr === 'string'
 	     ? 'pipe ' + addr
 	     : 'port ' + addr.port
-	 debug('Listening on ' + bind)
+/*	 debug('debug Listening on ' + bind) */
+	 console.log('console.log Listening on ' + bind) 
 }
